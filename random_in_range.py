@@ -20,7 +20,7 @@ def random_range(m, n):
     # get number of possible int
     possible_int = n - m + 1
     # used to extract integer from generated random
-    range = 10 ** ( len(str(possible_int)) + 1 )
+    range = 10 ** len(str(possible_int))
     # get random
     rand = math.floor(random.random() * range) 
     unit = range / possible_int
